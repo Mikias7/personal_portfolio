@@ -1,3 +1,5 @@
+import Button from 'react-bootstrap/Button';
+
 function Home(){
 
     const handleClick = () => {
@@ -24,11 +26,13 @@ function Home(){
             </div>
 
             <div class="justify-center pb-8 pr-8 pl-8">
-                <button 
+                <Button 
                     onClick={handleClick} 
-                    class="w-20 rounded-lg bg-blue-500 shadow-md">
+                    // class="w-20 rounded-lg bg-blue-500 shadow-md"
+                    variant="primary"
+                    >
                         Contact
-                </button>
+                </Button>
             </div>
         </div>
     )
