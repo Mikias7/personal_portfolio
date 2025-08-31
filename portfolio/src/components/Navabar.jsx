@@ -14,11 +14,7 @@ function Navbar() {
             <Nav.Item>
                 <Nav.Link href="/" eventKey="/">Home</Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-                <Nav.Link href="/about_me" eventKey="/about_me">About Me</Nav.Link>
-            </Nav.Item>
-
+            
             <Nav.Item>
                 <Nav.Link  href="/projects" eventKey="/projects">Projects</Nav.Link>
             </Nav.Item>
