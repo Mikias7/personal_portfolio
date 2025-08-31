@@ -6,11 +6,12 @@ function Navbar() {
     const [activeKey, setActiveKey] = useState("/")
 
     return (
-        <Nav
+        <div class="flex justify-end pr-5">
+            <Nav
             variant="underline"
             activeKey={activeKey}
             onSelect={(selectedKey) => setActiveKey(selectedKey)}
-        >
+            >
             <Nav.Item>
                 <Nav.Link href="/" eventKey="/">Home</Nav.Link>
             </Nav.Item>
@@ -28,6 +29,7 @@ function Navbar() {
             </Nav.Item>
 
         </Nav>
+        </div>
     );
 }
 
