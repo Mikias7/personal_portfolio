@@ -3,14 +3,14 @@ import Card from 'react-bootstrap/Card';
 
 function Cards({Title, Text, ImgPath}) {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card bg='dark' text="white" border="success" style={{ width: '18rem' }}>
       <Card.Img variant="top" src={ImgPath} />
       <Card.Body>
         <Card.Title>{Title}</Card.Title>
         <Card.Text>
           {Text}
         </Card.Text>
-        <Button variant="primary">View Details</Button>
+        <Button variant="success">View Details</Button>
       </Card.Body>
     </Card>
   );
