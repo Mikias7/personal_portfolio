@@ -9,13 +9,13 @@ function Home(){
     return (
         <div>
 
-            <div class="justify-center pt-8 pr-8 pl-8">
+            <div className="justify-center pt-8 pr-8 pl-8">
                 <h1 className="text-5xl font-bold">G'day, I'm</h1>
                 <h1 className="text-5xl font-bold">Mikias Tadele,</h1>
             </div>
 
             <div>
-                <p class="text-2xl justify-center p-8">I’m a self-motivated student driven by a deep passion 
+                <p className="text-2xl justify-center p-8">I’m a self-motivated student driven by a deep passion 
                     for leveraging software engineering and machine learning to 
                     effectively address business challenges. I'm continuously 
                     exploring new subjects to stay adaptable in changing 
@@ -25,7 +25,7 @@ function Home(){
                 </p>
             </div>
 
-            <div class="justify-center pb-8 pr-8 pl-8">
+            <div className="justify-center pb-8 pr-8 pl-8">
                 <Button 
                     onClick={handleClick} 
                     // class="w-20 rounded-lg bg-blue-500 shadow-md"

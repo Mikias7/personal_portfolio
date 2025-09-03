@@ -5,6 +5,7 @@ import AboutME from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Test from './pages/TestPage';
 
 import Navbar from "./components/Navabar"
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/projects" element={<Projects />}/>
           <Route path="/resume" element={<Resume />}/>
           <Route path="/contact" element={<Contact />}/>
+          <Route path="/test_page" element={<Test />}/>
         </Routes>
       </Router>
     </div>
