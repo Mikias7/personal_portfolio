@@ -9,24 +9,40 @@ import BlobCursor from '../blocks/BlobCursor/BlobCursor';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 function Test() {
   useEffect(() => {
     AOS.init({ duration: 2000 }); // animation duration in ms
   }, []);
 
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div style={{background: "lightgrey"}}>
+
+  <nav className="fixed top-2 left-1/2 -translate-x-1/2 flex gap-2">
+        <button onClick={() => scrollToSection(homeRef)}>Home</button>
+        <button onClick={() => scrollToSection(aboutRef)}>About</button>
+        <button onClick={() => scrollToSection(contactRef)}>Contact</button>
+      </nav>
 
       <BlobCursor
         blobType="circle"
         fillColor="#5227FF"
         trailCount={3}
-        sizes={[60, 125, 75]}
+        sizes={[170, 175, 175]}
         innerSizes={[20, 35, 25]}
         innerColor="rgba(207, 46, 46, 0.8)"
-        opacities={[0.6, 0.6, 0.6]}
+        opacities={[0.25, 0.25, 0.25]}
         shadowColor="rgba(0,0,0,0.75)"
         shadowBlur={5}
         shadowOffsetX={10}
@@ -37,7 +53,7 @@ function Test() {
         slowDuration={0.5}
         zIndex={100}
     />
-      <section  className="pt-40" data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
+      <section  ref={homeRef} className="pt-40" data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
         <Home />
         <div
           style={{
@@ -64,20 +80,20 @@ function Test() {
             shadowOffsetY={10}
             filterStdDeviation={30}
             useFilter={true}
-            fastDuration={2}
-            slowDuration={2.5}
+            fastDuration={0.5}
+            slowDuration={1}
             zIndex={100}
           />
         </div>
 
       </section>
-      <section data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
+      <section ref={aboutRef} data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
         <AboutME />
       </section>
       <section data-aos="fade-up" style={{ height: "130vh", background: "lightgrey" }}>
         <Projects />
       </section>
-      <section data-aos="fade-up" style={{ height: "50vh", background: "darkgrey" }}>
+      <section ref={contactRef} data-aos="fade-up" style={{ height: "50vh", background: "darkgrey" }}>
         <Contact />
       </section>
     </div>

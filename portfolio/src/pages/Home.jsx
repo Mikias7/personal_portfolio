@@ -15,11 +15,11 @@ function Home(){
                 <BlobCursor
                     blobType="circle"
                     fillColor="#5227FF"
-                    trailCount={3}
-                    sizes={[60, 125, 75]}
+                    trailCount={5}
+                    sizes={[60, 125, 175]}
                     innerSizes={[20, 35, 25]}
                     innerColor="rgba(255,255,255,0.8)"
-                    opacities={[0.6, 0.6, 0.6]}
+                    opacities={[0.1, 0.1, 0.6]}
                     shadowColor="rgba(0,0,0,0.75)"
                     shadowBlur={5}
                     shadowOffsetX={10}
@@ -63,7 +63,7 @@ function Home(){
                 <Button 
                     onClick={handleClick} 
                     // class="w-20 rounded-lg bg-blue-500 shadow-md"
-                    variant="primary"
+                    variant="success"
                     >
                         Contact
                 </Button>
