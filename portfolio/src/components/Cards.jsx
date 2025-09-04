@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Cards({Title, Text, ImgPath}) {
+function Cards({Title, Text, ImgPath, DescriptionPageRoute, ProjectDescription}) {
   return (
     <Card bg='dark' text="white" border="success" style={{ width: '18rem' }}>
       <Card.Img variant="top" src={ImgPath} />
@@ -10,7 +10,7 @@ function Cards({Title, Text, ImgPath}) {
         <Card.Text>
           {Text}
         </Card.Text>
-        <Button variant="success">View Details</Button>
+        <Button variant="success" onClick={""}>View Details</Button>
       </Card.Body>
     </Card>
   );
