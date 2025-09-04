@@ -36,6 +36,8 @@ function AboutME(){
                     continuously, and create meaningful results, bringing curiosity, creativity, 
                     and versatility to every endeavor I undertake.
                 </p>
+                <br/>
+                {/* <p>Over the time, I have acquired skills in many technologies some of them are:</p> */}
             </div>
 
         </div>

@@ -39,11 +39,42 @@ function Test() {
     />
       <section  className="pt-40" data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
         <Home />
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 9999,
+            background: "transparent",
+          }}
+        >
+          <BlobCursor
+            blobType="circle"
+            fillColor="#6d7a6c"
+            trailCount={5}
+            sizes={[60, 325, 175]}
+            innerSizes={[20, 35, 25]}
+            innerColor="rgba(177, 174, 174, 0.01)"
+            opacities={[0.1, 0.6, 0.1]}
+            shadowColor="rgba(0, 0, 0, 0)"
+            shadowBlur={5}
+            shadowOffsetX={10}
+            shadowOffsetY={10}
+            filterStdDeviation={30}
+            useFilter={true}
+            fastDuration={2}
+            slowDuration={2.5}
+            zIndex={100}
+          />
+        </div>
+
       </section>
       <section data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
         <AboutME />
       </section>
-      <section data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
+      <section data-aos="fade-up" style={{ height: "130vh", background: "lightgrey" }}>
         <Projects />
       </section>
       <section data-aos="fade-up" style={{ height: "50vh", background: "darkgrey" }}>
