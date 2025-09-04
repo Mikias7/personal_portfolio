@@ -43,7 +43,7 @@ function Test() {
       <section data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
         <AboutME />
       </section>
-      <section data-aos="fade-up" style={{ height: "200vh", background: "lightgrey" }}>
+      <section data-aos="fade-up" style={{ height: "100vh", background: "lightgrey" }}>
         <Projects />
       </section>
       <section data-aos="fade-up" style={{ height: "50vh", background: "darkgrey" }}>

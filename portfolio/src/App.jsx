@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Test from './pages/TestPage';
 
 import Navbar from "./components/Navabar"
+import ProjectDescription from './pages/ProjectDescription';
 
 function App() {
   
@@ -22,6 +23,9 @@ function App() {
           <Route path="/resume" element={<Resume />}/>
           <Route path="/contact" element={<Contact />}/>
           <Route path="/test_page" element={<Test />}/>
+
+          {/* Dynamic project description route */}
+          <Route path="/projects/:projectId" element={<ProjectDescription />} />
         </Routes>
       </Router>
     </div>
